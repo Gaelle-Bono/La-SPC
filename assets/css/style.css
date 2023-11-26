@@ -1,0 +1,664 @@
+/************************************************************************/
+/* RESET  */
+/***********************************************************************/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+}
+
+/***********************************************************************/
+/* general style */
+/***********************************************************************/
+
+
+/************** font-style ****************/
+
+*{
+  font-family: Roboto, sans-serif; 
+  color: black;
+  text-align:justify;
+}
+
+/* import Railey font family */
+@font-face { 
+  src: url('../Railey-PersonalUse.ttf'); 
+  font-family: Railey; 
+} 
+
+.font-railey{
+  font-family: Railey, Roboto, sans-serif;
+}
+
+/*****************************************/
+
+/* Header and Footer Styles */
+
+.spc-banner{
+  background-color: lightblue;
+  display: flex;
+  justify-content : space-between;
+  gap:5px;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+  width: 90px;
+  height : auto;
+}
+
+.brand{ 
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-align : center;
+}
+
+.header__container-links{
+  display: flex;
+  flex-direction: column; 
+  padding-left:0px;
+  align-items:flex-start;
+  font-size:0.9rem;
+  gap:5px;
+}
+
+.footer__container-links{
+  display: flex;
+  justify-content:space-between;
+  gap: 0px;
+}
+
+.spc-icon{
+  width: 32px;
+  height: auto;
+}
+
+/*****************************/
+
+.link:hover {
+  opacity:0.5;
+}
+
+.underlined_link{
+  text-decoration:underline;
+  color:  rgb(90, 155, 176);
+}
+
+.spc-button{
+  border-radius: 10px;
+  background-color: lightblue;
+  color: black;
+  padding: 4px 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.spc-button:hover{
+  background-color:  rgb(139, 186, 202);
+}  
+
+/* separator Styles */
+.hr{
+  width: 80%;
+  height: 5px;
+  background-color: rgb(202, 207, 210);
+  margin:25px auto;
+}
+/*****************************/
+
+.section-style{
+  margin-left : 10px;
+  margin-right : 10px;
+}
+
+.title2-style{
+  padding-bottom : 10px;
+}
+
+.flex-style{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+
+.spc-text-left{
+  text-align:left;
+}
+
+/************************************************/
+/****************INDEX.HTML**********************/
+/************************************************/
+
+/**************************************presentation section ************/
+.presentation{
+  position : relative;        
+  display : flex;
+  justify-content : flex-end;
+}
+
+.presentation__image{
+  width: 100%;
+  height : auto;
+}
+
+.presentation__container{
+  position: absolute;
+  display : flex;
+  flex-direction : column;
+  align-items : flex-end;
+  top : 70%;
+  gap: 5px;
+  margin-right : 5px;
+} 
+
+.presentation__title{
+  color : white;
+  font-size:1.2rem;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.presentation__container-links{
+  display: flex;
+  gap: 15px;
+}
+
+/*********************************who are we section ******************/
+
+/****************** Carousel Styles *************/
+#spc-carousel, .carousel-item{
+  width: 100%;
+  height: auto;
+}
+
+.carousel-indicators{
+  margin-bottom:0;
+}
+
+ .carousel-caption{
+  position:absolute;
+  padding: 0;
+  top:0;
+  right : 0;
+  left : 0;
+ }
+
+.carousel__text-style{
+  color: black;
+  background-color: lightblue;
+  opacity: 0.6;
+  text-align:center;
+}
+
+p.carousel__text-style{
+  visibility:hidden; 
+}
+
+/******************* Accordion Styles **********************/
+
+.accordion__container{
+  padding: 0;
+}
+
+ .accordion{
+  --bs-accordion-btn-focus-box-shadow:rgb(139, 186, 202);
+  --bs-accordion-color: black;
+  --bs-accordion-active-color: black;
+  --bs-accordion-btn-color: black;
+}
+
+.accordion-button{
+  background-color: lightblue;
+  border-bottom-color: black;
+  border-left-color: black;
+  border-right-color : black;
+  border-top-color:black;
+  color:black;
+  outline-color: black;
+}
+
+.accordion-button:hover, .accordion-button:not(.collapsed){
+  background-color:  rgb(139, 186, 202);
+  color: black;
+}  
+
+.accordion-button:focus{
+  color: black;
+}
+
+.accordion-body{
+  padding:10px 10px;
+}
+
+/**************************Contact section***************/
+
+.card-body{
+  padding:15px 5px;
+}
+
+
+
+
+/*************************************************************************************/
+/*************************************************************************************/
+                                       /* MEDIA QUERIES */
+/*************************************************************************************/
+/*************************************************************************************/
+
+
+
+/*********************************************************************/
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  
+  /* general styles */
+  .section-style{
+    margin-left : 20px;
+    margin-right : 20px;
+  }
+  
+  .spc-banner{
+    gap:10px;
+  }
+
+  .footer__container-links{
+    gap: 7px;
+  }
+}
+
+
+/*********************************************************************/
+
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  
+  /* general styles  ****/
+  .section-style{
+    margin-left : 20px;
+    margin-right : 20px;
+  }
+  
+  /*new*/
+  .spc-button{
+    padding: 6px 20px;
+  }
+
+    /* header and footer styles  ****/
+
+  .spc-banner{
+    gap:10px;
+  }
+
+  /*new */
+  .logo{
+    width: 100px;
+    height : auto;
+  }
+
+  /*new */
+  .brand{ 
+    font-size: 1.2rem;
+  }
+  
+  /*new  */
+  .header__container-links{
+    font-size:1rem;
+    gap: 5px;
+  }
+
+  .footer__container-links{
+    gap: 3px;
+  }
+
+  /*index.html *****/
+  /*new*/
+  .presentation__container-links{
+    gap: 20px;
+  }
+  
+  /*new */
+  .presentation__title{
+    font-size:1.4rem;
+  }
+}
+
+
+/*********************************************************************/
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+
+  /* general styles */
+  /*change*/
+  .section-style{
+    margin-left : 30px;
+    margin-right : 30px;
+  }
+  
+  /*new*/
+  .spc-button{
+    padding: 6px 20px;
+    font-size:1.2rem;
+  }
+
+    /* header and footer styles  ****/
+
+    /*changes*/
+  .spc-banner{
+    gap:10px;
+    padding: 10px;
+  }
+
+  /* changes */
+  .logo{
+    width: 150px;
+    height : auto;
+  }
+
+  /* changes*/
+  .brand{ 
+    font-size: 1.4rem;
+  }
+
+  .header__container-links{
+    font-size:1.2rem;
+    gap: 5px;
+  }
+
+  /*changes*/
+  .footer__container-links{
+    gap: 10px;
+  }
+  /*new*/
+  /* séparator */
+  .hr {
+    margin: 40px auto;
+  }
+
+   /*index.html *****/
+
+  /* presentation*/
+  /*new*/
+  .presentation__container{
+    gap : 10px;
+  }
+
+  .presentation__container-links{
+    gap: 20px;
+  }
+
+  /*new*/
+  .presentation__title{
+    font-size:1.6rem;
+  }
+  
+  /* who are we */
+  p.carousel__text-style{
+    visibility:visible; 
+  }
+}  
+
+
+/*********************************************************************/
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  
+  /* general styles */
+  .section-style{
+    margin-left : 30px;
+    margin-right : 30px;
+  }
+
+  .spc-button{
+    padding: 6px 20px;
+    font-size:1.2rem;
+  }
+
+    /* header and footer styles  ****/
+    /*changes*/
+  .spc-banner{
+    gap:10px;
+    padding: 15px;
+  }
+
+  .logo{
+    width: 150px;
+    height : auto;
+  }
+
+  .brand{ 
+    font-size: 1.4rem;
+  }
+
+    /*change*/
+  .header__container-links{
+    font-size:1.2rem;
+    gap: 5px;
+    flex-direction : row;
+    column-gap: 15px;
+  }
+
+  /*changes*/
+  .footer__container-links{
+    gap: 15px;
+  }
+
+    /* séparator */
+  .hr {
+    margin: 40px auto;
+  }
+
+    /*index.html *****/
+
+  /* presentation*/
+  
+  /*change*/
+  .presentation__container{
+    gap : 15px;
+    top : 10%;
+    margin-right : 10px;
+  } 
+
+  .presentation__container-links{
+    gap: 20px;
+  }
+
+  .presentation__title{
+    font-size:1.6rem;
+  }
+
+  /* who are we */
+  p.carousel__text-style{
+    visibility:visible; 
+  }
+}
+
+/*********************************************************************/
+
+
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+  
+  /* general styles */
+  .section-style{
+    margin-left : 30px;
+    margin-right : 30px;
+  }
+
+  .spc-button{
+    padding: 6px 20px;
+    font-size:1.2rem;
+  }
+
+    /* header and footer styles  ****/
+  .spc-banner{
+    gap:10px;
+    padding: 20px;
+  }
+
+  .logo{
+    width: 150px;
+    height : auto;
+  }
+
+  .brand{ 
+    font-size: 1.4rem;
+  }
+
+  .header__container-links{
+    font-size:1.2rem;
+    gap: 5px;
+    flex-direction : row;
+    column-gap: 15px;
+  }
+
+  .footer__container-links{
+    gap: 15px;
+  }
+
+  /*new*/
+  .spc-icon{
+    width: 45px;
+    height: auto;
+  }
+
+    /* séparator */
+  .hr {
+    margin: 40px auto;
+  }
+
+    /*index.html *****/
+
+  /* presentation*/
+
+  .presentation__container{
+    gap : 15px;
+    top : 10%;
+    margin-right : 10px;
+  } 
+
+  .presentation__container-links{
+    gap: 20px;
+  }
+
+  .presentation__title{
+    font-size:1.6rem;
+  }
+
+  /* who are we */
+  p.carousel__text-style{
+    visibility:visible; 
+  }
+}
+
+/****************************************************************************/
+@media screen and (min-width: 1101px) {
+    
+  /* general styles */
+  .section-style{
+    margin-left : 30px;
+    margin-right : 30px;
+  }
+
+  .spc-button{
+    padding: 6px 20px;
+    font-size:1.2rem;
+  }
+
+    /* header and footer styles  ****/
+  .spc-banner{
+    gap:10px;
+    padding: 15px;
+  }
+
+  .logo{
+    width: 150px;
+    height : auto;
+  }
+
+  .brand{ 
+    font-size: 1.4rem;
+  }
+
+  /*changes*/
+  .header__container-links{
+    font-size:1.2rem;
+    gap: 5px;
+    flex-direction : row;
+    column-gap: 25px;
+  }
+
+  /*changes*/
+  .footer__container-links{
+    gap: 20px;
+  }
+
+  .spc-icon{
+    width: 45px;
+    height: auto;
+  }
+
+    /* séparator */
+  .hr {
+    margin: 40px auto;
+  }
+
+  /*new*/
+  .flex-style{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items : center;
+  }
+
+    /*index.html *****/
+
+  /* presentation*/
+  
+  .presentation__container{
+    gap : 15px;
+    top : 10%;
+    margin-right : 10px;
+  } 
+
+  .presentation__container-links{
+    gap: 20px;
+  }
+
+  .presentation__title{
+    font-size:1.6rem;
+  }
+
+  /* who are we */
+
+  /* Carousel Styles */
+  /*new*/
+  #my-carousel, .carousel-item{
+    width: 600px;
+    height: 400px;
+  }
+
+  p.carousel__text-style{
+    visibility:visible; 
+  }
+
+  /*join us */
+  /*new*/
+  .join-us__container-text{
+    flex-shrink: 2;
+  }
+}
