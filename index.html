@@ -13,7 +13,7 @@
   <body class="w-100">
     <!-- Start header -->
     <header class="sticky-top">
-      <div class="container-fluid spc-banner">
+      <div class="spc-banner">
         <img class="logo" src="assets/img/logo.png" alt="logo de l'association La SPC"/>
         <!-- Stylised brand -->
         <h1 class="brand"><span class="font-railey">L</span>a <span class="font-railey">S</span>ociété <span class="font-railey">P</span>rotectrice des <span class="font-railey">C</span>hats</h1>
@@ -21,23 +21,21 @@
         <nav>
           <ul class="header__container-links">
             <li><a class="link" href="index.html"><span class="font-railey">A</span>ccueil</a></li>
-            <li><a class="link" href="#"><span class="font-railey">J</span>'adopte</a></li> 
+            <li><a class="link" href="adoption.html"><span class="font-railey">J</span>'adopte</a></li> 
             <li><a class="link" href="#"><span class="font-railey">E</span>vènements</a></li> 
             <li><a class="link" href="#contact"><span class="font-railey">C</span>ontact</a></li> 
           </ul>
         </nav>
       </div>                    
-    </header>  
-    <!-- End header -->   
+    </header>    
 
-    <!-- Start main -->
     <main>
-      <!-- presentation -->
+      <!-- presentation section  -->
       <section> 
         <div class="presentation">
           <img class="presentation__image" src="assets/img/chats-adoptables.jpg" alt="photo de deux chats"/>
           <div class="presentation__container">
-            <h2 class="presentation__title">Donnons-leur autant qu'ils nous apportent</h2>
+            <h2 class="presentation__title text-right">Donnons-leur autant qu'ils nous apportent</h2>
             <div class="presentation__container-links">
               <a class="spc-button" href="#don">Je donne</a>
               <a class="spc-button" href="adoption.html">J'adopte</a>
@@ -48,12 +46,12 @@
 
       <div class="hr"></div>
 
-      <!-- Who are we ? -->
-      <section class="section-style">
+      <!-- who are we section  -->
+      <section class="section-style who-are-we">
         <h2 class="title2-style"><span class="font-railey">Q</span>ui sommes-nous ?</h2>
         <div class="flex-style">
-          <!-- Caroussel -->
-          <div id="spc-carousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- carousel -->
+          <div id="spc-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#spc-carousel" data-bs-slide-to="0" class="active"
                   aria-current="true" aria-label="Diapo 1">
@@ -73,7 +71,7 @@
                 <img src="assets/img/refuge.jpg" class="d-block w-100" alt="photo du refuge">
                 <div class="carousel-caption d-block">
                   <h3 class="carousel__text-style">Notre refuge</h3>
-                  <p class="carousel__text-style">
+                  <p class="carousel__text-style visibility">
                     Il se compose d'un très bel extérieur, mais aussi de plusieurs espaces intérieurs 
                     pour accueillir les chats.
                   </p>
@@ -84,7 +82,7 @@
                 <img src="assets/img/olympe.jfif" class="d-block w-100" alt="photo d'Olympe, un chat à adopter">
                 <div class="carousel-caption d-block">
                   <h3 class="carousel__text-style">Olympe, chat de 5 mois à adopter</h3>
-                  <p class="carousel__text-style">
+                  <p class="carousel__text-style visibility">
                     Venez découvrir nos adorables chats qui ne demandent qu'à trouver une nouvelle famille.
                   </p>
                 </div>
@@ -94,7 +92,7 @@
                 <img src="assets/img/veterinaire.jpg" class="d-block w-100" alt="photo du vétérinaire du refuge">
                 <div class="carousel-caption d-block">
                   <h3 class="carousel__text-style">Les soins vétérinaires</h3>
-                  <p class="carousel__text-style">
+                  <p class="carousel__text-style visibility">
                     Nos chats sont vaccinés, stérilisés, soignés. Leur santé est contrôlée régulièrement.
                   </p>
                 </div>
@@ -104,7 +102,7 @@
                 <img src="assets/img/soigneuse.jpg" class="d-block w-100" alt="photo d'une soigneuse au refuge">
                 <div class="carousel-caption d-block">
                   <h3 class="carousel__text-style">Venez nous rejoindre</h3>
-                  <p class="carousel__text-style">
+                  <p class="carousel__text-style visibility">
                     Vous êtes passionné par les chats et aimez vous en occuper. N'hésitez pas à postuler pour compléter notre équipe. 
                   </p>
                 </div>
@@ -120,6 +118,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          <!-- in row : left text of the carousel -->
           <div>
             <p>
               Créée le 2 décembre 2005, <b>l'association recueille les chats en détresse, 
@@ -138,7 +137,7 @@
               lutter contre la souffrance des chats errants</b> par des campagnes de stérilisation, 
               <b>sensibiliser le public à la protection animale</b> sont autant d'actions menées par la SPC.     
             </p>
-            <p>
+            <p class="last-p">
               <b>Vous disposez d'un peu temps et souhaitez le consacrer aux chats ?</b> 
               Participez à leur bien-être à nos côtés !
             </p>
@@ -148,21 +147,22 @@
 
       <div class="hr"></div>
 
-      <!-- Join us -->
-      <section class="section-style">
+      <!-- join us section -->
+      <section class="section-style join-us">
         <h2 class="title2-style"><span class="font-railey">R</span>ejoignez-nous</h2>
         <div class="flex-style">
+          <!-- in row : right text of the accordion -->
           <div class="join-us__container-text">
             <p>
               La SPC est une communauté qui agit au service des chats en détresse.
               Ce sont <b>5 salariés</b> et <b>25 bénévoles</b> qui <b>se mobilisent au sein de l'association.</b> 
               <b>Vous souhaitez les rejoindre ?</b>
             </p>
-            <p>Les activités de nos salariés et de nos bénévoles sont basées sur quatre axes principaux :
+            <p class="last-p">Les activités de nos salariés et de nos bénévoles sont basées sur quatre axes principaux :
               <b>le bien-être des chats, l'entretien et le confort des chats, 
               le soin des chats </b> et le support bureautique.</p>
           </div>
-          <!-- Accordion -->
+          <!-- accordion -->
           <div class="container accordion__container">
             <div class="accordion w-100 accordion-flush" id="accordion">
               <div class="accordion-item">
@@ -177,15 +177,15 @@
                     Au refuge, le salarié ou le bénévole participe à favoriser le bien-être et la socialisation 
                     des chats dans l'objectif de l'adoption :
                     <ul>
-                      <li>- il essaye de créer un lien apaisant en s'adaptant aux comportements de chaque chat.</li>
-                      <li>- il favorise la socialisation des plus timides.</li>
-                      <li>- il caresse, brosse, joue avec les chats des chatteries.</li>
+                      <li class="li-style">- il essaye de créer un lien apaisant en s'adaptant aux comportements de chaque chat.</li>
+                      <li class="li-style">- il favorise la socialisation des plus timides.</li>
+                      <li class="li-style">- il caresse, brosse, joue avec les chats des chatteries.</li>
                     </ul>
                     <br>
                     Le salarié ou le bénévole participe aussi à favoriser le bien-être des chats hors refuge :
                     <ul>
-                      <li>- il accompagne des transferts de chats.</li>
-                      <li>- il participe à l'identification et à la stérilisation des chats errants.</li>
+                      <li class="li-style">- il accompagne des transferts de chats.</li>
+                      <li class="li-style">- il participe à l'identification et à la stérilisation des chats errants.</li>
                       <li>- il réalise des visites post-adoptions pour s'assurer des bonnes conditions 
                         de vie des chats adoptés à la SPC.</li>
                     </ul>
@@ -203,8 +203,8 @@
                   <div class="accordion-body">
                     Le salarié ou le bénévole aide à l'entretien des lieux de vie des chats pour contribuer à leur bien-être et bénéficier d'espaces propres pour accueillir le public. 
                     <ul>
-                      <li>- il nettoie et désinfecte les chatteries et infirmeries (nettoyage et désinfection des bacs litières, des gamelles, des étagères, des linges, des sols et murs).</li>
-                      <li>- il nourrit et surveille l'état de santé des chats.</li>
+                      <li class="li-style">- il nettoie et désinfecte les chatteries et infirmeries (nettoyage et désinfection des bacs litières, des gamelles, des étagères, des linges, des sols et murs).</li>
+                      <li class="li-style">- il nourrit et surveille l'état de santé des chats.</li>
                       <li>- il respecte les procédures sanitaires et de sécurité.</li>
                     </ul>
                   </div>
@@ -221,15 +221,15 @@
                   <div class="accordion-body">
                     Le vétérinaire, salarié de l'association, assure et suit les soins des animaux pris en charge par la SPC.
                     <ul>
-                      <li>- il établit le diagnostic des chats en apportant son expertise métier.</li>
-                      <li>- il prévient et soigne les maladies des chats.</li>
-                      <li>- il suit et veille à la santé des animaux.</li>
+                      <li class="li-style">- il établit le diagnostic des chats en apportant son expertise métier.</li>
+                      <li class="li-style">- il prévient et soigne les maladies des chats.</li>
+                      <li class="li-style">- il suit et veille à la santé des animaux.</li>
                     </ul>
                     <br>
                     L'assistant vétérinaire accompagne le vétérinaire dans ses activités et participe à la bonne gestion du refuge de la SPC.
                     <ul>
-                      <li>- il aide aux soins prodigués par le vétérinaire.</li>
-                      <li>- il s'assure de la bonne application des règles d'hygiène et de sécurité.</li>
+                      <li class="li-style">- il aide aux soins prodigués par le vétérinaire.</li>
+                      <li class="li-style">- il s'assure de la bonne application des règles d'hygiène et de sécurité.</li>
                       <li>- il participe à l'accueil et à la gestion administrative du refuge.</li>
                     </ul>
                   </div>
@@ -247,8 +247,8 @@
                     Le salarié ou le bénévole réalise les tâches d'accueil téléphonique 
                     et physique, il participe au quotidien administratif du refuge. 
                     <ul>
-                      <li>- il accueille, renseigne et/ou oriente les visiteurs, adoptants.</li>
-                      <li>- il saisit les informations dans le logiciel interne.</li>
+                      <li class="li-style">- il accueille, renseigne et/ou oriente les visiteurs, adoptants.</li>
+                      <li class="li-style">- il saisit les informations dans le logiciel interne.</li>
                       <li>- il traite les courriers</li>
                     </ul>
                   </div>
@@ -261,7 +261,7 @@
 
       <div class="hr"></div>
 
-      <!-- Help us -->
+      <!-- help us section -->
       <section class="section-style">
         <h2 id="don" class="title2-style"><span class="font-railey">A</span>idez-nous</h2>
         <div>
@@ -279,8 +279,8 @@
 
       <div class="hr"></div>
 
-       <!-- Contact -->
-       <section class="section-style">
+      <!-- contact section -->
+      <section class="section-style">
         <h2 id="contact" class="title2-style"><span class="font-railey">C</span>ontacts</h2>
         <div>
           <p>
@@ -290,7 +290,7 @@
             <div class="card col-lg-3">
               <div class="card-body">
                 <h3 class="card-title">Adresse</h3>
-                <p class="card-text spc-text-left">Refuge de la SPC<br>
+                <p class="card-text without-justification">Refuge de la SPC<br>
                   35 rue des Chats<br>
                   85440 Talmont-Saint-Hilaire
                 </p>
@@ -299,7 +299,7 @@
             <div class="card col-lg-5">
               <div class="card-body">
                 <h3 class="card-title">Emails</h3>
-                <p class="card-text spc-text-left">Email général : <a class="text-nowrap underlined_link" href="mailto:info@la-spc.fr">info@la-spc.fr</a><br>
+                <p class="card-text without-justification">Email général : <a class="text-nowrap underlined_link" href="mailto:info@la-spc.fr">info@la-spc.fr</a><br>
                   Email pour les adoptions : <a class="text-nowrap underlined_link" href="mailto:adoptions@la-spc.fr">adoptions@la-spc.fr</a><br>
                   Email pour les dons : <a class="text-nowrap underlined_link" href="mailto:dons@la-spc.fr">dons@la-spc.fr</a>
                 </p>
@@ -308,7 +308,7 @@
             <div class="card col-lg-4">
               <div class="card-body">
                 <h3 class="card-title">Téléphone</h3>
-                <p class="card-text spc-text-left">Accueil de la SPC : <a class="text-nowrap underlined_link" href="tel:+33154789055">01 54 78 90 55</a><br>
+                <p class="card-text without-justification">Accueil de la SPC : <a class="text-nowrap underlined_link" href="tel:+33154789055">01 54 78 90 55</a><br>
                   Accueil adoptions : <a class="text-nowrap underlined_link" href="tel:+33138435674">01 38 43 56 74</a><br>
                   Accueil donateurs : <a class="text-nowrap underlined_link" href="tel:+331145657923">01 45 65 79 23</a>
                 </p>
@@ -323,8 +323,8 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="container-fluid spc-banner">
+     <footer>
+      <div class="spc-banner">
         <img class="logo" src="assets/img/logo.png" alt="logo de l'association La SPC"/>
         <h1 class="brand"><span class="font-railey">L</span>a <span class="font-railey">S</span>ociété <span class="font-railey">P</span>rotectrice des <span class="font-railey">C</span>hats</h1>
         <div class="footer__container-links">
@@ -333,7 +333,7 @@
           <a class="link" target="_blank" href="https://www.instagram.com/"><img class="spc-icon" src="assets/img/instagram.png" alt="logo d'instagram"></a>
       </div>
       </div> 
-    </footer>                   
+    </footer>                    
     <script src="assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
