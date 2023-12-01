@@ -97,7 +97,18 @@ button{
 
 /************************************************************/
 
-/* separator Styles */
+.spc-button{
+  border-radius: 10px;
+  background-color: lightblue;
+  color: black;
+  padding: 4px 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.spc-button:hover{
+  background-color:  rgb(139, 186, 202);
+}  
+
 .hr{
   width: 80%;
   height: 5px;
@@ -110,11 +121,17 @@ button{
 }
 
 .title2-style{
+  text-align : left;
   padding-bottom : 15px;
 }
 
-.li-style{
-  margin-bottom: 10px;
+.without-justification{
+  text-align:left;
+}
+
+.underlined_link{
+  text-decoration:underline;
+  color:  rgb(90, 155, 176);
 }
 
 /* for presentation section in index.html and in adoption.html */
@@ -122,6 +139,27 @@ button{
   color : white;
   font-size:1.2rem;
   margin-bottom: 0;
+}
+
+/* for "cats" grid and "events" grid in adoption.html and events.html*/
+.cards-grid{
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column */
+  grid-gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.max-width-200{
+  max-width : 200px;
+}
+
+.max-width-300{
+  max-width : 300px;
+}
+
+.max-width-400{
+  max-width : 400px;
 }
 
 /************************************************/
@@ -136,9 +174,11 @@ button{
 }
 
 .presentation__image{
+  display : block;
   width: 100%;
   max-width : 1200px;
   height : auto;
+  margin : auto;
 }
 
 .presentation__container{
@@ -156,28 +196,12 @@ button{
   gap: 10px;
 }
 
-.spc-button{
-  border-radius: 10px;
-  background-color: lightblue;
-  color: black;
-  padding: 4px 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.spc-button:hover{
-  background-color:  rgb(139, 186, 202);
-}  
-
 /***************** who are we and join us sections*********************/
 .flex-style{
   display: flex;
   flex-direction: column;
   align-items:center;
   gap : 20px;
-}
-
-.last-p{
-  margin-bottom:0;
 }
 
 /*********************************who are we section ******************/
@@ -187,10 +211,6 @@ button{
   width: 100%;
   max-width: 600px;
   height: auto;
-}
-
-.carousel-indicators{
-  margin-bottom:0;
 }
 
  .carousel-caption{
@@ -213,10 +233,6 @@ button{
 }
 
 /************** Accordion Styles **********************/
-
-.accordion__container{
-  padding: 0;
-}
 
  .accordion{
   --bs-accordion-btn-focus-box-shadow:rgb(139, 186, 202);
@@ -244,38 +260,15 @@ button{
   color: black;
 }
 
- .accordion-body{
-  padding-left : 0;
-  padding-right : 0;
-} 
-
-/**************************Contact section***************/
-
-.card-body{
-  padding:5% 2%;
-}
-
-.without-justification{
-  text-align:left;
-}
-
-.underlined_link{
-  text-decoration:underline;
-  color:  rgb(90, 155, 176);
-}
-
 /************************************************/
 /****************ADOPTION.HTML**********************/
 /************************************************/
-
- .p-reduced-margin-bottom{
-  margin-bottom: 7px;
-} 
 
 .title3-style{
   margin-top :30px;
   margin-bottom : 15px;
   font-size: 1.2rem;
+  text-align : left;
 } 
 
 .title3-background-color{
@@ -303,16 +296,13 @@ button{
   margin : 0 3%;
 } 
 
-/***************************************/
+/************************************************/
+/****************INTERNATIONAL-CAT-DAY.HTML**********************/
+/************************************************/
 
-/*    cats section **********/
-/* cats grid */
-.cats-grid{
-  display: grid;
-  grid-template-columns: 1fr; /* 1 column */
-  grid-gap: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+.spc-figure{
+  display : block;
+  margin:auto;
 }
 
 /*************************************************************************************/
@@ -328,67 +318,61 @@ button{
   /************* general Styles *****************************/
 
   /* **********header and footer styles ****** */
-  /*change*/
   .logo{
     width: 150px;
   }
 
-  /*new*/
   .brand{ 
     font-size: 1.2rem;
   }
 
-  /*new*/
   .footer__container-links{
     flex-direction : row;
     gap : 5%
   }
-
-  /****************************/
-
-    /* for presentation section in index.html and in adoption.html */
-  /*new*/
-  .presentation__title{
-    font-size:1.4rem;
-  }
-
-  /*************************** index.html *******************/
-
-  /*****************presentation section */
-  /*change*/
-    .presentation__container{
-    gap : 10px;
-    top : 10%;
-  } 
-
-  /*new*/
-  .presentation__container-links{
-    gap: 20px;
-  }
-
-  /*new*/
+  /**********************/
   .spc-button{
     padding: 6px 20px;
   } 
-
-  /*******************who are we section */
-  /*new*/
-  .visibility{
-    visibility: visible;
-  }
-  
-  /*************************** adoption.html *******************/
 
   .title3-style{
     margin-bottom : 20px;
     font-size: 1.4rem;
   } 
 
-  .cats-grid{
+  /* for presentation section in index.html and in adoption.html */
+  .presentation__title{
+    font-size:1.4rem;
+  }
+
+  /* for "cats" grid and "events" grid in adoption.html and events.html*/
+  .cards-grid{
     grid-template-columns: repeat(2, 1fr); /* 2 columns same width */
     grid-gap: 25px;
   }
 
+  /*************************** index.html *******************/
+
+  /*****************presentation section */
+    .presentation__container{
+    gap : 10px;
+    top : 10%;
+  } 
+
+  .presentation__container-links{
+    gap: 20px;
+  }
+
+  /*******************who are we section */
+  .visibility{
+    visibility: visible;
+  }
+
+  /*************************** international cat day.html *******************/
+  .spc-figure{
+    width : 500px;
+  }
+  
   /**************700px < width screen < 900px ***********************************/
 
   @media screen and (min-width: 700px) {
@@ -396,32 +380,31 @@ button{
      /************* general Styles *****************************/
 
     /* header and footer styles  */
-    /*new*/
     .header__container-links{
       flex-direction : row;
       gap: 10px;
       font-size:1.2rem;
     }
 
-    /*change*/
     .brand{ 
       font-size: 1.4rem;
     }
 
-    /*new*/
     .spc-icon{
       width: 40px;
       height: auto;
     }
-
     /**************************/
+
+    .spc-button{
+      font-size:1.2rem;
+    } 
 
     .hr {
       margin: 40px auto;
     }
 
     /* for presentation section in index.html and in adoption.html */
-    /*change*/
     .presentation__title{
       font-size:1.6rem;
     }
@@ -429,20 +412,13 @@ button{
 /*************************** index.html *******************/
 
     /*who are we section and join us section */
-    /*new*/
     .flex-style{
       gap : 30px;
     }
 
     /*presentation section */
-    /*change*/
     .presentation__container{
       gap : 15px;
-    } 
-
-    /*change*/
-    .spc-button{
-      font-size:1.2rem;
     } 
 
     /**************900px < width screen < 1100px ***********************************/
@@ -456,36 +432,31 @@ button{
         gap: 20px;
       }
 
-      /*change*/
       .footer__container-links{
         gap : 10%
+      }
+
+      /* for "cats" grid and "events" grid in adoption.html and events.html*/
+      .cards-grid{
+        grid-template-columns: repeat(3, 1fr); /* 3 columns same width */
       }
     
 /*************************** index.html *******************/
 
       /*presentation section */
-      /*change*/
       .presentation__container-links{
         gap: 20px;
       }
     
       /*join us */
-      /*change*/
       .join-us > .flex-style{
         flex-direction:row;
         justify-content:space-between;
         align-items : center;
       }
 
-      /*new*/
       .join-us__container-text{
         flex-shrink: 2;
-      }
-
-  /*************************** adoption.html *******************/
-
-      .cats-grid{
-        grid-template-columns: repeat(3, 1fr); /* 3 columns same width */
       }
 
       /**************width screen > 1100px ***********************************/
@@ -494,8 +465,14 @@ button{
       
          /************* general Styles *****************************/
 
+        /* header and footer styles  */
         .header__container-links{
           gap: 30px;
+        }
+
+        /* for "cats" grid and "events" grid in adoption.html and events.html*/
+        .cards-grid{
+          grid-template-columns: repeat(4, 1fr); /* 4 columns same width */
         }
 
 /*************************** index.html *******************/
@@ -506,25 +483,12 @@ button{
           left : 55%;
         } 
 
-        .presentation__image{
-          display : block;
-          margin : auto;
-        }
-
         /* who are we and join us section */
-        /*change*/
         .flex-style{
           flex-direction:row;
           justify-content:space-between;
           align-items : center;
         }
-
-  /*************************** adoption.html *******************/
-
-        .cats-grid{
-          grid-template-columns: repeat(4, 1fr); /* 4 columns same width */
-        }
-
       }
     } 
   } 
