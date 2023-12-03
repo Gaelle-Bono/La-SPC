@@ -329,6 +329,10 @@ button{
   display:flex;
 }
 
+.img-cat{
+  display : block;
+}
+
 /************Nestle.html, Joy.html, Domino.html***************************/
 
 #nestle-carousel, #nestle-carousel > .carousel-item, 
