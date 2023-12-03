@@ -162,6 +162,14 @@ button{
   max-width : 400px;
 }
 
+.max-width-500{
+  max-width : 500px;
+}
+
+.breadcrumb-nav{
+  margin-left: 3%;
+}
+
 /************************************************/
 /****************INDEX.HTML**********************/
 /************************************************/
@@ -207,7 +215,7 @@ button{
 /*********************************who are we section ******************/
 
 /****************** Carousel Styles *************/
-#spc-carousel, .carousel-item{
+#index-carousel, #index-carousel > .carousel-item{
   width: 100%;
   max-width: 600px;
   height: auto;
@@ -295,6 +303,40 @@ button{
   top : 5%;
   margin : 0 3%;
 } 
+
+/*************some cats to adopt*************/
+.cat-link{
+  position : relative;
+}
+
+.cat-link:hover{
+  opacity : 0.8;
+}
+
+.cat-info{
+  position : absolute;
+  color: black;
+  background-color: lightblue;
+  opacity : 0.8;
+  text-align: center;
+  display : none;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.cat-link:hover .cat-info{
+  display:flex;
+}
+
+/************Nestle.html, Joy.html, Domino.html***************************/
+
+#nestle-carousel, #nestle-carousel > .carousel-item, 
+#joy-carousel, #joy-carousel > .carousel-item,
+#domino-carousel, #domino-carousel > .carousel-item{
+  width: 100%;
+  max-width: 450px;
+}
 
 /************************************************/
 /****************INTERNATIONAL-CAT-DAY.HTML**********************/
